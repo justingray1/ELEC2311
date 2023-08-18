@@ -1,19 +1,18 @@
-# Compile of Wk4_D_Pos_Latch.vhd was successful.
-# Compile of Wk4_D_Pos_Latch_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.wk4_d_pos_latch_tb
-# vsim -gui work.wk4_d_pos_latch_tb 
-# Start time: 12:00:39 on Aug 18,2023
+# Compile of Wk4_D_Neg_Latch.vhd was successful.
+# Compile of Wk4_D_Neg_latch_tb.vhd was successful.
+vsim -gui work.wk4_d_neg_latch_tb
+# vsim -gui work.wk4_d_neg_latch_tb 
+# Start time: 12:44:29 on Aug 18,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.wk4_d_pos_latch_tb(v1)
-# Loading work.wk4_d_pos_latch(v1)
+# Loading work.wk4_d_neg_latch_tb(v1)
+# Loading work.wk4_d_neg_latch(v1)
 add wave -position insertpoint  \
-sim:/wk4_d_pos_latch_tb/D \
-sim:/wk4_d_pos_latch_tb/CLK \
-sim:/wk4_d_pos_latch_tb/Q \
-sim:/wk4_d_pos_latch_tb/T
+sim:/wk4_d_neg_latch_tb/D \
+sim:/wk4_d_neg_latch_tb/CLK \
+sim:/wk4_d_neg_latch_tb/Q \
+sim:/wk4_d_neg_latch_tb/T
 run -all
-# End time: 12:01:16 on Aug 18,2023, Elapsed time: 0:00:37
+# End time: 13:01:06 on Aug 18,2023, Elapsed time: 0:16:37
 # Errors: 0, Warnings: 0

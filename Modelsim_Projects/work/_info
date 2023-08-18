@@ -8,35 +8,35 @@ z2
 !i10f 100
 cModel Technology
 dC:/Applications/intelFPGA
-Ewk4_d_pos_latch
-Z0 w1692329734
+Ewk4_d_neg_latch
+Z0 w1692332578
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 dC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects
-Z4 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
-Z5 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+Z4 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
+Z5 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
 l0
 L5
-VCdd8l2gJ5<:^IC?=?Qd`E0
-!s100 ]CDL5;HNe>@C3YW0Uhg<k2
+VfS0@g;C5S4@cmZ8z^mD==0
+!s100 NMCz8d0Zelh[@YLF=8;To1
 Z6 OV;C;10.5b;63
 32
-Z7 !s110 1692331225
+Z7 !s110 1692333415
 !i10b 1
-Z8 !s108 1692331225.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
-Z10 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+Z8 !s108 1692333415.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
+Z10 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1 CvgOpt 0
 Av1
 R1
 R2
-DEx4 work 15 wk4_d_pos_latch 0 22 Cdd8l2gJ5<:^IC?=?Qd`E0
+DEx4 work 15 wk4_d_neg_latch 0 22 fS0@g;C5S4@cmZ8z^mD==0
 l14
 L13
-VGz;JPfn>oLaeaAQ?Oh5Ez0
-!s100 gO3c9GSmI]973jZ3692WJ3
+Vf4gN=cg4S[mO0YhoXlfW;1
+!s100 A=olXa?az9G[i6?jIj`Um1
 R6
 32
 R7
@@ -47,35 +47,35 @@ R10
 !i113 1
 R11
 R12
-Ewk4_d_pos_latch_tb
-Z13 w1692330207
+Ewk4_d_neg_latch_tb
+Z13 w1692333843
 R1
 R2
 R3
-Z14 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
-Z15 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+Z14 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
+Z15 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
 l0
-L5
-V]O4WRV2d0YmN>oGl?ch>]3
-!s100 Q]cEgS;`LXGjlo=WAMmXQ1
+L6
+V1dYViF:[JE^2KOV8Zid>m0
+!s100 kFA62oT:7fKcj^YINjBC80
 R6
 32
-Z16 !s110 1692331226
+Z16 !s110 1692333847
 !i10b 1
-Z17 !s108 1692331226.000000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
-Z19 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+Z17 !s108 1692333847.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
+Z19 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
 !i113 1
 R11
 R12
 Av1
 R1
 R2
-Z20 DEx4 work 18 wk4_d_pos_latch_tb 0 22 ]O4WRV2d0YmN>oGl?ch>]3
-l25
-L8
-Z21 VH?:j<4N6V6c]=a0X<6fA02
-Z22 !s100 H@:HJQOeH1U1DP@>R5O>]3
+DEx4 work 18 wk4_d_neg_latch_tb 0 22 1dYViF:[JE^2KOV8Zid>m0
+l26
+L9
+VgPcPBAlM`SX?>=ojk5eNP3
+!s100 m_IEV<nB78F^I6>zD`nN02
 R6
 32
 R16
@@ -83,6 +83,84 @@ R16
 R17
 R18
 R19
+!i113 1
+R11
+R12
+Ewk4_d_pos_latch
+Z20 w1692329734
+R1
+R2
+R3
+Z21 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+Z22 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+l0
+L5
+VCdd8l2gJ5<:^IC?=?Qd`E0
+!s100 ]CDL5;HNe>@C3YW0Uhg<k2
+R6
+32
+Z23 !s110 1692331225
+!i10b 1
+Z24 !s108 1692331225.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+Z26 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+!i113 1
+R11
+R12
+Av1
+R1
+R2
+DEx4 work 15 wk4_d_pos_latch 0 22 Cdd8l2gJ5<:^IC?=?Qd`E0
+l14
+L13
+VGz;JPfn>oLaeaAQ?Oh5Ez0
+!s100 gO3c9GSmI]973jZ3692WJ3
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ewk4_d_pos_latch_tb
+Z27 w1692330207
+R1
+R2
+R3
+Z28 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+Z29 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+l0
+L5
+V]O4WRV2d0YmN>oGl?ch>]3
+!s100 Q]cEgS;`LXGjlo=WAMmXQ1
+R6
+32
+Z30 !s110 1692331226
+!i10b 1
+Z31 !s108 1692331226.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+Z33 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+!i113 1
+R11
+R12
+Av1
+R1
+R2
+DEx4 work 18 wk4_d_pos_latch_tb 0 22 ]O4WRV2d0YmN>oGl?ch>]3
+l25
+L8
+VH?:j<4N6V6c]=a0X<6fA02
+!s100 H@:HJQOeH1U1DP@>R5O>]3
+R6
+32
+R30
+!i10b 1
+R31
+R32
+R33
 !i113 1
 R11
 R12

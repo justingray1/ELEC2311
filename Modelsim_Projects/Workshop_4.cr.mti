@@ -1,10 +1,26 @@
-C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Wk4_D_Neg_Latch
+-- Compiling architecture v1 of Wk4_D_Neg_Latch
+
+} {} {}} C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity Wk4_D_Pos_Latch
 -- Compiling architecture v1 of Wk4_D_Pos_Latch
+
+} {} {}} C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Wk4_D_Neg_Latch_tb
+-- Compiling architecture v1 of Wk4_D_Neg_Latch_tb
 
 } {} {}} C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

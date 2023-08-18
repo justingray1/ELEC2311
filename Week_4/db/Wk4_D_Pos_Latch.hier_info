@@ -1,0 +1,6 @@
+|Wk4_D_Pos_Latch
+D => Q$latch.DATAIN
+CLK => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

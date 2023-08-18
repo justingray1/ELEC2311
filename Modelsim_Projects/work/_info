@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Applications/intelFPGA
+Ewk4_d_pos_latch
+Z0 w1692329734
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects
+Z4 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+Z5 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+l0
+L5
+VCdd8l2gJ5<:^IC?=?Qd`E0
+!s100 ]CDL5;HNe>@C3YW0Uhg<k2
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1692331225
+!i10b 1
+Z8 !s108 1692331225.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+Z10 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Av1
+R1
+R2
+DEx4 work 15 wk4_d_pos_latch 0 22 Cdd8l2gJ5<:^IC?=?Qd`E0
+l14
+L13
+VGz;JPfn>oLaeaAQ?Oh5Ez0
+!s100 gO3c9GSmI]973jZ3692WJ3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ewk4_d_pos_latch_tb
+Z13 w1692330207
+R1
+R2
+R3
+Z14 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+Z15 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+l0
+L5
+V]O4WRV2d0YmN>oGl?ch>]3
+!s100 Q]cEgS;`LXGjlo=WAMmXQ1
+R6
+32
+Z16 !s110 1692331226
+!i10b 1
+Z17 !s108 1692331226.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+Z19 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+!i113 1
+R11
+R12
+Av1
+R1
+R2
+Z20 DEx4 work 18 wk4_d_pos_latch_tb 0 22 ]O4WRV2d0YmN>oGl?ch>]3
+l25
+L8
+Z21 VH?:j<4N6V6c]=a0X<6fA02
+Z22 !s100 H@:HJQOeH1U1DP@>R5O>]3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

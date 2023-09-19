@@ -51,3 +51,33 @@ set_global_assignment -name VHDL_FILE flip_flop.vhd
 set_global_assignment -name VHDL_FILE Part_1.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_B8 -to KEY0
+set_location_assignment PIN_C10 -to SW0
+set_location_assignment PIN_C11 -to SW1
+set_location_assignment PIN_A8 -to LEDR0
+set_location_assignment PIN_A9 -to LEDR1
+set_location_assignment PIN_A10 -to LEDR2
+set_location_assignment PIN_B10 -to LEDR3
+set_location_assignment PIN_D13 -to LEDR4
+set_location_assignment PIN_C13 -to LEDR5
+set_location_assignment PIN_E14 -to LEDR6
+set_location_assignment PIN_D14 -to LEDR7
+set_location_assignment PIN_A11 -to LEDR8
+set_location_assignment PIN_B11 -to LEDR9
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW1
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

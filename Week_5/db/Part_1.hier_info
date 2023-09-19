@@ -1,0 +1,103 @@
+|Part_1
+SW0 => Y[0].ACLR
+SW0 => Y[1].ACLR
+SW0 => Y[2].ACLR
+SW0 => Y[3].ACLR
+SW0 => Y[4].ACLR
+SW0 => Y[5].ACLR
+SW0 => Y[6].ACLR
+SW0 => Y[7].ACLR
+SW0 => Y[8].ACLR
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+SW1 => Y.IN1
+KEY0 => Y[0].CLK
+KEY0 => Y[1].CLK
+KEY0 => Y[2].CLK
+KEY0 => Y[3].CLK
+KEY0 => Y[4].CLK
+KEY0 => Y[5].CLK
+KEY0 => Y[6].CLK
+KEY0 => Y[7].CLK
+KEY0 => Y[8].CLK
+LEDR9 << comb.DB_MAX_OUTPUT_PORT_TYPE
+LEDR8 << Y[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR7 << Y[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR6 << Y[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR5 << Y[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR4 << Y[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR3 << Y[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR2 << Y[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR1 << Y[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR0 << Y[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y0
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y1
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y2
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y3
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y4
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y5
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y6
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y7
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part_1|flip_flop:Y8
+D => Q_next.DATAIN
+CLK => Q_next.CLK
+Q <= Q_next.DB_MAX_OUTPUT_PORT_TYPE
+
+

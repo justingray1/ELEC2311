@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Week_8_Lab_Part_1
-Tue Sep 19 13:53:25 2023
+Tue Sep 19 15:30:10 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -10,7 +10,15 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +45,22 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Sep 19 13:53:25 2023               ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 19 15:30:10 2023           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; Week_8_Lab_Part_1                               ;
 ; Top-level Entity Name              ; Week_8_Lab_Part_1                               ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
-; UFM blocks                         ; N/A until Partition Merge                       ;
-; ADC blocks                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 37                                              ;
+;     Total combinational functions  ; 37                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 13                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
+; UFM blocks                         ; 0                                               ;
+; ADC blocks                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -158,39 +166,172 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; Week_8_Lab_Part_1.vhd            ; yes             ; User VHDL File  ; C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 37         ;
+;                                             ;            ;
+; Total combinational functions               ; 37         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 26         ;
+;     -- 3 input functions                    ; 6          ;
+;     -- <=2 input functions                  ; 5          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 37         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 13         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; Y_state~27 ;
+; Maximum fan-out                             ; 14         ;
+; Total fan-out                               ; 154        ;
+; Average fan-out                             ; 2.44       ;
++---------------------------------------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
+; |Week_8_Lab_Part_1         ; 37 (37)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |Week_8_Lab_Part_1  ; Week_8_Lab_Part_1 ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; LEDR8~0                                                ;   ;
+; LEDR7~0                                                ;   ;
+; LEDR6~0                                                ;   ;
+; LEDR5~0                                                ;   ;
+; LEDR3~0                                                ;   ;
+; LEDR2~0                                                ;   ;
+; LEDR1~0                                                ;   ;
+; Number of logic cells representing combinational loops ; 7 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |Week_8_Lab_Part_1|Y_state ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |Week_8_Lab_Part_1|Y_state ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Week_8_Lab_Part_1|Y_state ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 13                          ;
+; cycloneiii_lcell_comb ; 39                          ;
+;     normal            ; 39                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 26                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.84                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
-    Info: Processing started: Tue Sep 19 13:53:18 2023
+    Info: Processing started: Tue Sep 19 15:30:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Week_8_Lab_Part_1 -c Week_8_Lab_Part_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(108) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 108
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(113) near text "when";  expecting "end", or "(", or an identifier ("when" is a reserved keyword), or a sequential statement File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 113
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(118) near text "when";  expecting "end", or "(", or an identifier ("when" is a reserved keyword), or a sequential statement File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 118
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(122) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 122
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(125) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 125
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(127) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 127
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(130) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 130
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(132) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 132
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(135) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 135
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(137) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 137
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(145) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 145
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(147) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 147
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(150) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 150
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(152) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 152
-Error (10500): VHDL syntax error at Week_8_Lab_Part_1.vhd(154) near text "process";  expecting "if" File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 154
-Info (12021): Found 0 design units, including 0 entities, in source file week_8_lab_part_1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file week_8_lab_part_1.vhd
+    Info (12022): Found design unit 1: Week_8_Lab_Part_1-Behavioural File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 27
+    Info (12023): Found entity 1: Week_8_Lab_Part_1 File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file flip_flop.vhd
     Info (12022): Found design unit 1: flip_flop-Behavioral File: C:/Users/23295274/Desktop/ELEC2311/Week_5/flip_flop.vhd Line: 12
     Info (12023): Found entity 1: flip_flop File: C:/Users/23295274/Desktop/ELEC2311/Week_5/flip_flop.vhd Line: 6
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 15 errors, 1 warning
-    Error: Peak virtual memory: 4783 megabytes
-    Error: Processing ended: Tue Sep 19 13:53:25 2023
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:15
+Info (12127): Elaborating entity "Week_8_Lab_Part_1" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at Week_8_Lab_Part_1.vhd(12): used implicit default value for signal "LEDR9" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 12
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(42): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(66): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(90): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(91): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 91
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(92): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(93): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(94): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(95): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(96): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(97): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 97
+Warning (10492): VHDL Process Statement warning at Week_8_Lab_Part_1.vhd(98): signal "Y_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 98
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR9" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 12
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY0" File: C:/Users/23295274/Desktop/ELEC2311/Week_5/Week_8_Lab_Part_1.vhd Line: 11
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 37 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Tue Sep 19 15:30:10 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

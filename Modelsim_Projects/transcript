@@ -1,18 +1,108 @@
-# Compile of Wk4_D_Neg_Latch.vhd was successful.
-# Compile of Wk4_D_Neg_latch_tb.vhd was successful.
-vsim -gui work.wk4_d_neg_latch_tb
-# vsim -gui work.wk4_d_neg_latch_tb 
-# Start time: 12:44:29 on Aug 18,2023
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of ram32x4.vhd was successful.
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of Part_1_tb.vhd failed with 61 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 61 errors.
+# Compile of Part_1_tb.vhd failed with 65 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 65 errors.
+# Compile of Part_1_tb.vhd failed with 65 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 65 errors.
+# Compile of Part_1_tb.vhd failed with 65 errors.
+# Compile of Part_1_tb.vhd failed with 65 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 65 errors.
+# Compile of Part_1_tb.vhd failed with 65 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 65 errors.
+# Compile of Part_1_tb.vhd failed with 75 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 75 errors.
+# Compile of Part_1_tb.vhd failed with 6 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 6 errors.
+# Compile of Part_1_tb.vhd failed with 1 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of Part_1_tb.vhd failed with 1 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of Part_1_tb.vhd failed with 8 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 8 errors.
+# Compile of Part_1_tb.vhd failed with 7 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of Part_1_tb.vhd failed with 6 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 6 errors.
+# Compile of Part_1_tb.vhd failed with 5 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 5 errors.
+# Compile of Part_1_tb.vhd failed with 3 errors.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 1 failed with 3 errors.
+# Compile of Part_1_tb.vhd was successful with warnings.
+# Compile of part1.vhd was successful.
+# Compile of ram32x4.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.part_1_tb
+# vsim -gui work.part_1_tb 
+# Start time: 16:21:42 on Oct 01,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.wk4_d_neg_latch_tb(v1)
-# Loading work.wk4_d_neg_latch(v1)
+# Loading work.part_1_tb(behavioural)
+# Loading work.part1(behavior)
+# Loading altera_mf.altera_mf_components
+# Loading work.ram32x4(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
 add wave -position insertpoint  \
-sim:/wk4_d_neg_latch_tb/D \
-sim:/wk4_d_neg_latch_tb/CLK \
-sim:/wk4_d_neg_latch_tb/Q \
-sim:/wk4_d_neg_latch_tb/T
+sim:/part_1_tb/addr_tb \
+sim:/part_1_tb/clock_tb \
+sim:/part_1_tb/din_tb \
+sim:/part_1_tb/wren_tb \
+sim:/part_1_tb/dout_tb
 run -all
-# End time: 13:01:06 on Aug 18,2023, Elapsed time: 0:16:37
+quit -sim
+# End time: 16:23:37 on Oct 01,2023, Elapsed time: 0:01:55
 # Errors: 0, Warnings: 0

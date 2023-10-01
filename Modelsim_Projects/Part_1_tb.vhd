@@ -1,0 +1,102 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity Part_1_tb is
+end Part_1_tb;
+
+architecture behavioural of Part_1_tb is
+	signal 	addr_tb		:STD_LOGIC_VECTOR(4 DOWNTO 0);
+	signal 	clock_tb 	:STD_LOGIC;
+	signal	din_tb		:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	signal	wren_tb		:STD_LOGIC;
+	signal 	dout_tb		:STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+	component part1
+		port
+		(
+			clock : IN  STD_LOGIC;
+			write : IN  STD_LOGIC;
+			DataIn : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+			Address : IN  STD_LOGIC_VECTOR(4 DOWNTO 0);
+			DataOut : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+		);
+	end component;
+begin
+	DUT: part1
+	port map
+	(
+		clock => clock_tb,
+		write => wren_tb,
+		DataIn => din_tb,
+		Address => addr_tb,
+		DataOut => dout_tb
+	);
+	
+
+	stimulus: process
+	begin
+		addr_tb <= "00000";
+		clock_tb <= '0';
+		din_tb <= "0000";
+		wren_tb <= '0';
+
+		wait for 5ns; --5ns
+		clock_tb <= '1';
+
+		wait for 5ns; --10ns
+		clock_tb <= '0';
+
+		wait for 5ns; --15ns
+		clock_tb <= '1';
+
+		wait for 5ns; --20ms
+		clock_tb <= '0';
+		din_tb <= "1010";
+		wren_tb <= '1';
+
+		wait for 5ns; --25ns
+		clock_tb <= '1';
+		
+		wait for 5ns; --30ns
+		clock_tb <= '0';
+		din_tb <= "0000";
+		wren_tb <= '0';
+		
+		wait for 5ns; --35ns
+		clock_tb <= '1';
+		
+		wait for 5ns; --40ns
+		addr_tb <= "11111";
+		clock_tb <= '0';
+		din_tb <= "0101";
+		wren_tb <= '1';
+
+		wait for 5ns; --45ns
+		clock_tb <= '1';
+
+		wait for 5ns; --50ns
+		addr_tb <= "00000";
+		clock_tb <= '0';
+		din_tb <= "0000";
+		wren_tb <= '0';
+
+		wait for 5ns; --55ns
+		clock_tb <= '1';
+		
+		wait for 5ns; --60ns
+		addr_tb <= "11111";
+		clock_tb <= '0';
+
+		wait for 5ns; --65ns
+		clock_tb <= '1';
+		
+		wait for 5ns; --70ns
+		clock_tb <= '0';
+
+		wait;
+	end process;
+end behavioural;
+		
+		 
+		
+			

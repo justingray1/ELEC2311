@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part_2
-Sun Oct 01 19:39:53 2023
+Tue Oct 03 14:03:07 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -18,11 +18,10 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
  10. Source assignments for ram32x4:U1|altsyncram:altsyncram_component|altsyncram_f2p3:auto_generated
  11. Parameter Settings for User Entity Instance: ram32x4:U1|altsyncram:altsyncram_component
  12. altsyncram Parameter Settings by Entity Instance
- 13. Port Connectivity Checks: "hex_decoder:HEX_Decoder_0"
- 14. Port Connectivity Checks: "hex_decoder:HEX_Decoder_4"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 13. Port Connectivity Checks: "hex_decoder:HEX_Decoder_4"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -49,13 +48,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 01 19:39:53 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 03 14:03:07 2023           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; Part_2                                          ;
 ; Top-level Entity Name              ; part_2                                          ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 14                                              ;
-;     Total combinational functions  ; 14                                              ;
+; Total logic elements               ; 21                                              ;
+;     Total combinational functions  ; 21                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 43                                              ;
@@ -196,16 +195,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 14               ;
+; Estimated Total logic elements              ; 21               ;
 ;                                             ;                  ;
-; Total combinational functions               ; 14               ;
+; Total combinational functions               ; 21               ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 14               ;
+;     -- 4 input functions                    ; 21               ;
 ;     -- 3 input functions                    ; 0                ;
 ;     -- <=2 input functions                  ; 0                ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 14               ;
+;     -- normal mode                          ; 21               ;
 ;     -- arithmetic mode                      ; 0                ;
 ;                                             ;                  ;
 ; Total registers                             ; 0                ;
@@ -219,8 +218,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; Address[1]~input ;
 ; Maximum fan-out                             ; 11               ;
-; Total fan-out                               ; 153              ;
-; Average fan-out                             ; 1.47             ;
+; Total fan-out                               ; 188              ;
+; Average fan-out                             ; 1.69             ;
 +---------------------------------------------+------------------+
 
 
@@ -229,7 +228,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                               ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------+-----------------+--------------+
-; |part_2                                   ; 14 (0)              ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 43   ; 0            ; 0          ; |part_2                                                                           ; part_2          ; work         ;
+; |part_2                                   ; 21 (0)              ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 43   ; 0            ; 0          ; |part_2                                                                           ; part_2          ; work         ;
+;    |hex_decoder:HEX_Decoder_0|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |part_2|hex_decoder:HEX_Decoder_0                                                 ; hex_decoder     ; work         ;
 ;    |hex_decoder:HEX_Decoder_2|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |part_2|hex_decoder:HEX_Decoder_2                                                 ; hex_decoder     ; work         ;
 ;    |hex_decoder:HEX_Decoder_5|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |part_2|hex_decoder:HEX_Decoder_5                                                 ; hex_decoder     ; work         ;
 ;    |ram32x4:U1|                           ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |part_2|ram32x4:U1                                                                ; ram32x4         ; work         ;
@@ -354,15 +354,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------+
-; Port Connectivity Checks: "hex_decoder:HEX_Decoder_0" ;
-+---------+-------+----------+--------------------------+
-; Port    ; Type  ; Severity ; Details                  ;
-+---------+-------+----------+--------------------------+
-; input_a ; Input ; Info     ; Stuck at GND             ;
-+---------+-------+----------+--------------------------+
-
-
-+-------------------------------------------------------+
 ; Port Connectivity Checks: "hex_decoder:HEX_Decoder_4" ;
 +---------------+-------+----------+--------------------+
 ; Port          ; Type  ; Severity ; Details            ;
@@ -377,15 +368,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 43                          ;
-; cycloneiii_lcell_comb ; 18                          ;
-;     normal            ; 18                          ;
+; cycloneiii_lcell_comb ; 26                          ;
+;     normal            ; 26                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
-;         4 data inputs ; 14                          ;
+;         1 data inputs ; 3                           ;
+;         4 data inputs ; 21                          ;
 ; cycloneiii_ram_block  ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.09                        ;
+; Average LUT depth     ; 1.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -404,7 +395,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
-    Info: Processing started: Sun Oct 01 19:39:37 2023
+    Info: Processing started: Tue Oct 03 14:02:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part_2 -c Part_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -480,25 +471,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 11
     Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 11
     Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 11
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/23295274/Desktop/ELEC2311/Lab_6/Part_2.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 14 logic cells
+    Info (21061): Implemented 21 logic cells
     Info (21064): Implemented 4 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Sun Oct 01 19:39:53 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Tue Oct 03 14:03:07 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 

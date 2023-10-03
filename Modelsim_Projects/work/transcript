@@ -1,0 +1,20 @@
+# Compile of Part_1_tb.vhd was successful with warnings.
+vsim -gui work.part_1_tb
+# vsim -gui work.part_1_tb 
+# Start time: 14:23:05 on Oct 03,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part_1_tb(behavioural)
+# ** Warning: (vsim-3473) Component instance "DUT : part1" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /part_1_tb File: C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/work/Part_1_tb.vhd
+add wave -position insertpoint  \
+sim:/part_1_tb/addr_tb \
+sim:/part_1_tb/clock_tb \
+sim:/part_1_tb/din_tb \
+sim:/part_1_tb/wren_tb \
+sim:/part_1_tb/dout_tb
+run -all
+# WARNING: No extended dataflow license exists
+# End time: 14:24:27 on Oct 03,2023, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 2

@@ -55,8 +55,8 @@ BEGIN
 	HEX_Decoder_5: hex_decoder PORT Map (Address(4 downto 1), HEX5);
 	HEX_Decoder_4: hex_decoder PORT Map ("000" & Address(0), HEX4);
 	HEX_Decoder_2: hex_decoder PORT Map (DataIn, HEX2);
-	--HEX_Decoder_0: hex_decoder PORT Map (DataOut, HEX0);
-	HEX_Decoder_0: hex_decoder PORT Map (input_A => "0000", HEXOUT => HEX0);
+	HEX_Decoder_0: hex_decoder PORT Map (d_out, HEX0);
+	--HEX_Decoder_0: hex_decoder PORT Map (input_A => "0000", HEXOUT => HEX0);
 	
 	dataout <= d_out;
 	

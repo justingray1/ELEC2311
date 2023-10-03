@@ -112,11 +112,11 @@ Asyn
 R19
 R1
 R2
-Z24 DEx4 work 7 ram32x4 0 22 fUhhXH;Y?Hbn]KCm<EBEj3
+DEx4 work 7 ram32x4 0 22 fUhhXH;Y?Hbn]KCm<EBEj3
 l59
 L55
-Z25 Vk1kXoEQ;Z?g[BRfJP3W8g1
-Z26 !s100 kM[n]7el7ZhkfOn<3gbVB2
+Vk1kXoEQ;Z?g[BRfJP3W8g1
+!s100 kM[n]7el7ZhkfOn<3gbVB2
 R6
 32
 R7
@@ -128,23 +128,23 @@ R23
 R11
 R12
 Ewk4_d_neg_latch
-Z27 w1692332578
+Z24 w1695103416
 R1
 R2
 R3
-Z28 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
-Z29 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
+Z25 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
+Z26 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd
 l0
 L5
 VfS0@g;C5S4@cmZ8z^mD==0
 !s100 NMCz8d0Zelh[@YLF=8;To1
 R6
 32
-Z30 !s110 1692333415
+Z27 !s110 1696317440
 !i10b 1
-Z31 !s108 1692333415.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
-Z33 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
+Z28 !s108 1696317439.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
+Z30 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Neg_Latch.vhd|
 !i113 1
 R11
 R12
@@ -158,71 +158,71 @@ Vf4gN=cg4S[mO0YhoXlfW;1
 !s100 A=olXa?az9G[i6?jIj`Um1
 R6
 32
-R30
+R27
 !i10b 1
-R31
-R32
-R33
+R28
+R29
+R30
 !i113 1
 R11
 R12
 Ewk4_d_neg_latch_tb
-Z34 w1692333843
+Z31 w1695103415
 R1
 R2
 R3
-Z35 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
-Z36 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
+Z32 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
+Z33 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd
 l0
 L6
 V1dYViF:[JE^2KOV8Zid>m0
 !s100 kFA62oT:7fKcj^YINjBC80
 R6
 32
-Z37 !s110 1692333847
+R27
 !i10b 1
-Z38 !s108 1692333847.000000
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
-Z40 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
+Z34 !s108 1696317440.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
+Z36 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Neg_latch_tb.vhd|
 !i113 1
 R11
 R12
 Av1
 R1
 R2
-DEx4 work 18 wk4_d_neg_latch_tb 0 22 1dYViF:[JE^2KOV8Zid>m0
+Z37 DEx4 work 18 wk4_d_neg_latch_tb 0 22 1dYViF:[JE^2KOV8Zid>m0
 l26
 L9
-VgPcPBAlM`SX?>=ojk5eNP3
-!s100 m_IEV<nB78F^I6>zD`nN02
+Z38 VgPcPBAlM`SX?>=ojk5eNP3
+Z39 !s100 m_IEV<nB78F^I6>zD`nN02
 R6
 32
-R37
+R27
 !i10b 1
-R38
-R39
-R40
+R34
+R35
+R36
 !i113 1
 R11
 R12
 Ewk4_d_pos_latch
-Z41 w1692329734
+R24
 R1
 R2
 R3
-Z42 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
-Z43 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+Z40 8C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
+Z41 FC:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd
 l0
 L5
 VCdd8l2gJ5<:^IC?=?Qd`E0
 !s100 ]CDL5;HNe>@C3YW0Uhg<k2
 R6
 32
-Z44 !s110 1692331225
+Z42 !s110 1696317439
 !i10b 1
-Z45 !s108 1692331225.000000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
-Z47 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+R28
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
+Z44 !s107 C:/Users/23295274/Desktop/ELEC2311/Week_4/Wk4_D_Pos_Latch.vhd|
 !i113 1
 R11
 R12
@@ -236,32 +236,32 @@ VGz;JPfn>oLaeaAQ?Oh5Ez0
 !s100 gO3c9GSmI]973jZ3692WJ3
 R6
 32
-R44
+R42
 !i10b 1
-R45
-R46
-R47
+R28
+R43
+R44
 !i113 1
 R11
 R12
 Ewk4_d_pos_latch_tb
-Z48 w1692330207
+R31
 R1
 R2
 R3
-Z49 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
-Z50 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+Z45 8C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
+Z46 FC:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd
 l0
 L5
 V]O4WRV2d0YmN>oGl?ch>]3
 !s100 Q]cEgS;`LXGjlo=WAMmXQ1
 R6
 32
-Z51 !s110 1692331226
+R42
 !i10b 1
-Z52 !s108 1692331226.000000
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
-Z54 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+R28
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
+Z48 !s107 C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/Wk4_D_Pos_Latch_tb.vhd|
 !i113 1
 R11
 R12
@@ -275,11 +275,11 @@ VH?:j<4N6V6c]=a0X<6fA02
 !s100 H@:HJQOeH1U1DP@>R5O>]3
 R6
 32
-R51
+R42
 !i10b 1
-R52
-R53
-R54
+R28
+R47
+R48
 !i113 1
 R11
 R12

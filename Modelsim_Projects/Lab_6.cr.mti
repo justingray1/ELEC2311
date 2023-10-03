@@ -20,21 +20,4 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 ** Warning: C:\Users\23295274\Desktop\ELEC2311\Modelsim_Projects\Part_1_tb.vhd(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: C:\Users\23295274\Desktop\ELEC2311\Modelsim_Projects\Part_1_tb.vhd(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/part1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Modelsim_Projects/part1.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity part1
--- Compiling architecture Behavior of part1
-
-} {} {}} C:/Users/23295274/Desktop/ELEC2311/Lab_6/ram32x4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/23295274/Desktop/ELEC2311/Lab_6/ram32x4.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package altera_mf_components
--- Compiling entity ram32x4
--- Compiling architecture SYN of ram32x4
-
 } {} {}}

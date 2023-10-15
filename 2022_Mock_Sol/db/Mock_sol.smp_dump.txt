@@ -1,0 +1,7 @@
+
+State Machine - |Mock_sol|Current_state
+Name Current_state~5 Current_state~4 
+Current_state.A 0 0 
+Current_state.B 0 1 
+Current_state.C 1 0 
+Current_state.D 1 1 

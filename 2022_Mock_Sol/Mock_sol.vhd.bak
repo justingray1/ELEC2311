@@ -1,0 +1,131 @@
+library IEEE;
+use IEEE>STD_LOGIC_1164.ALL;
+
+ENTITY Mock_sol IS
+	PORT
+	(
+		RST_ASYNC_LOW	:	IN		STD_LOGIC;
+		CLK_IN			:	IN		STD_LOGIC;
+		RATE				:	IN		STD_LOGIC;
+		W					:	IN		STD_LOGIC;
+		DISPLAY			:	OUT	STD_LOGIC_VECTOR(6 downto 0)
+	);
+END ENTITY;
+
+ARCHITECTURE Arch OF Mock_sol IS
+
+TYPE State_t IS (A,B,C,D);
+	ATTRIBUTE syn_encoding: string;
+	ATTRIBUTE syn_encoding OF State_t	:	TYPE IS "00 01 10 11";
+	
+SIGNAL Current_state;
+SIGNAL Next_state;
+SIGNAL State_t;
+
+SIGNAL Divided_CLK	:	STD_LOGIC;
+SIGNAL Count			:	STD_LOGIC_VECTOR (3 downto 0);
+
+SIGNAL Mux_Clock0		:	STD_LOGIC;
+SIGNAL Mux_clock1		:	STD_LOGIC;
+
+attribute chip_pin	:	string;
+
+attribute chip_pin of clk_in				:	signal is "P11";
+attribute chip_pin of RST_ASYNC_LOW		:	signal is "B8";
+attribute chip_pin of RATE					:	signal is "C11";
+attribute chip_pin of W						:	signal is "C10";
+attribute chip_pin of DISPLAY				:	signal is "C14, E15, C15, C1, E16, D17, C17";
+
+component hex_decoder is
+	Port
+	(
+		INPUT_A	:	IN		STD_LOGIC_VECTOR(3 downto 0);
+		HEXOUT	:	OUT	STD_LOGIC_VECTOR(6 downto 0)
+	);
+end component;
+
+component clk_divider_to_1hz is
+	generic(Freq_in	:	integer	:=	50000000);
+	Port
+	(
+		clk_in	:	IN		STD_LOGIC;
+		reset		:	IN		STD_LOGIC;
+		clk_out	:	OUT	STD_LOGIC;
+	);
+end component;
+
+BEGIN
+	
+	Divided_clk <= MuxClock0 WHEN RATE = '0' ELSE MUXClock1;
+	
+	slow_clock	:	clk_divider_to_1hz
+		GENERIC MAP(Freq_in => 100000000);
+		PORT MAP(CLK_IN, '0', Mux_Clock0);
+		
+	fast_clock	:	clk_divider_to_1hz
+		GENERIC MAP(Freq_in => 50000000);
+		PORT MAP(CLK_IN, '0', MUXclock1);
+		
+	seven_seggy	:	hex_decoder
+		PORT MAP(Count, DISPLAY);
+		
+	sync_process	:	Process(Divided_clk, RST_ASYNC_LOW)
+		BEGIN
+			IF RST_ASYNC_LOW = '0' then
+				current_state <= A;
+			ELSIF rising_edge(divided_clk) THEN
+				current_state <= next_state;
+			END IF;
+	END PROCESS sync_process;
+	
+	comb_process	:	Process(current_state, w)
+		BEGIN
+			CASE current_state IS
+				WHEN A =>
+					count <= "0000";
+					IF w = '0' THEN
+						next_state <= D;
+					ELSIF w = '1' THEN
+						next_state <= B;
+					END IF;
+				WHEN B =>
+					count <= "0001";
+					IF w = '0' THEN
+						next_state <= A;
+					ELSIF w = '1' THEN
+						next_state <= C;
+					END IF;
+				WHEN C =>
+					count <= "0010";
+					IF w = '0' THEN
+						next_state <= B;
+					ELSIF w = '1' THEN
+						next_state <= D;
+					END IF;
+				WHEN D =>
+					count <= "0011";
+					IF w = '0' THEN
+						next_state <= C;
+					ELSIF w = '1' THEN
+						next_state <= A;
+					END IF;
+			END CASE;
+	END PROCSS comb_process
+END ARCHITECTURE
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
